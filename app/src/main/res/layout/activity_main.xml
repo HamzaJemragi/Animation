@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imgvw"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFD580"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="TestCard"
+                android:textColor="#ffff"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:text="clicker pour voir les animations"
+                android:textColor="#ffff" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnFadeIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgvw"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="87dp"
+        android:width="130dp"
+        android:text="Fade In" />
+
+    <Button
+        android:id="@+id/btnFadeOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnFadeIn"
+        android:layout_marginLeft="13dp"
+        android:layout_toRightOf="@+id/btnFadeIn"
+        android:width="130dp"
+        android:text="Fade Out" />
+
+    <Button
+        android:id="@+id/zoomIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnFadeIn"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="20dp"
+        android:width="130dp"
+        android:text="ZoomIn" />
+
+    <Button
+        android:id="@+id/zoomOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/zoomIn"
+        android:layout_marginLeft="13dp"
+        android:layout_toRightOf="@+id/zoomIn"
+        android:width="130dp"
+        android:text="zoomOut" />
+
+    <Button
+        android:id="@+id/Rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zoomIn"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="20dp"
+        android:width="130dp"
+        android:text="rotate" />
+
+    <Button
+        android:id="@+id/SlideUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Rotate"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="20dp"
+        android:width="130dp"
+        android:text="SlideUp" />
+
+    <Button
+        android:id="@+id/SlideDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/SlideUp"
+        android:layout_marginLeft="13dp"
+        android:layout_toRightOf="@+id/SlideUp"
+        android:width="130dp"
+        android:text="SlideDown" />
+
+    <Button
+        android:id="@+id/SlideRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SlideUp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="20dp"
+        android:width="130dp"
+        android:text="Slide Right" />
+
+    <Button
+        android:id="@+id/SlideLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/SlideRight"
+        android:layout_marginLeft="13dp"
+        android:layout_toRightOf="@+id/SlideRight"
+        android:width="130dp"
+        android:text="Slide Left" />
+
+    <Button
+        android:id="@+id/translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SlideRight"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="20dp"
+        android:width="130dp"
+        android:text="Translate" />
+
+    <Button
+        android:id="@+id/Scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/translate"
+        android:layout_marginLeft="13dp"
+        android:layout_toRightOf="@+id/translate"
+        android:width="130dp"
+        android:text="Scale" />
+</RelativeLayout>
